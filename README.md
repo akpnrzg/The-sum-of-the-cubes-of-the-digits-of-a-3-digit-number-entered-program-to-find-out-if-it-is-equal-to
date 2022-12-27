@@ -1,24 +1,26 @@
 /*# The-sum-of-the-cubes-of-the-digits-of-a-3-digit-number-entered-program-to-find-out-if-it-is-equal-to
 The sum of the cubes of the digits of a 3-digit number entered program to find out if it is equal to itself*/
-#include <conio.h>
 #include <stdio.h>
-    int main()
+#include <stdlib.h>
+int main()
 {
-    int dig,num,sum=0;
-    printf("Enter 3 digit number: ");scanf("%d",&num);
-    dnz:
-    dig=num%10;
-    sum+=pow(dig,3);
-    num/=10;
-    if(num<10)
-
-    {
-        sum+=pow(num,3);
-        goto dnz;
-    }
-    if(num=sum)
-        printf("Equal");
-    else
-        printf("Not equal");
-
+// od = ones digit
+// td = tens digit
+// hd = hundreds digit
+int i;
+int od, td, hb;
+for(i=1; i < 999; i++)
+{
+     od = i % 10;
+     td = (i/10) % 10;
+     hd = i / 100;
+     od = bb*bb*bb;
+     td = ob*ob*ob;
+     hd = yb*yb*yb;
+     if( i == od+td+hd )
+     {
+         printf("%d\n",i);
+     }
+}
+return 0;
 }
