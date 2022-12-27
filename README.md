@@ -14,9 +14,9 @@ for(i=1; i < 999; i++)
      od = i % 10;
      td = (i/10) % 10;
      hd = i / 100;
-     od = bb*bb*bb;
-     td = ob*ob*ob;
-     hd = yb*yb*yb;
+     od = od*od*od;
+     td = td*td*td;
+     hd = hd*hd*hd;
      if( i == od+td+hd )
      {
          printf("%d\n",i);
